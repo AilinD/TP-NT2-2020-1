@@ -1,20 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import CronometroPomodoro from './components/CronometroPomodoro';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Bienvenidos NT2!</Text>
-      <Text>Proyecto a realizar: Cronometro Pomodoro.</Text>
-    </View>
-  );
+//No supe como mantener la posición de los TextInput y de los botones al abrirse el teclado.
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <CronometroPomodoro/>
+    );
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
